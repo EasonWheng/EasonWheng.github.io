@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="丁奕禛 EasonWheng 的个人主页：LLM、Agent、RailGPT、飞行与认知无线电。">
+  <meta name="description" content="丁奕禛 EasonWheng 的个人主页：LLM、Agent、RailGPT、飞行、SDR 与 ADS-B。">
   <title>丁奕禛 · EasonWheng</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="accent-bar"></div>
-  <header class="strip"><div class="strip-inner"><div><b class="apt mono">ZSNJ · NANJING</b><span class="sep"> / </span><b class="mono">丁奕禛 · EasonWheng</b></div><div><a class="mono" href="https://github.com/EasonWheng" target="_blank" rel="noopener">GitHub</a><span class="sep"> · </span><span class="zulu mono" id="zulu">00:00:00Z</span></div></div></header>
+  <header class="strip"><div class="strip-inner"><div><b class="apt mono">ZSFZ · ZSNJ · ZGSZ · ZGGG</b><span class="sep"> / </span><b class="mono">丁奕禛 · EasonWheng</b></div><div><a class="mono" href="https://github.com/EasonWheng" target="_blank" rel="noopener">GitHub</a><span class="sep"> · </span><span class="zulu mono" id="zulu">00:00:00Z</span></div></div></header>
   <main>
     <section class="hero">
       <img class="avatar" src="https://avatars.githubusercontent.com/u/178960363?v=4&amp;s=200" alt="EasonWheng 的头像" width="120" height="120">
-<div><p class="eyebrow mono">PERSONAL PAGE</p><h1>丁奕禛 <span class="name-en mono">EasonWheng</span></h1><p class="one-liner mono">LLM / Agent · RailGPT · 737 / A320 · 认知无线电</p><p class="contact mono"><a href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a><span class="sep"> · </span><a href="mailto:whengeason@gmail.com">whengeason@gmail.com</a></p></div>
+<div><p class="eyebrow mono">PERSONAL PAGE</p><h1>丁奕禛 <span class="name-en mono">EasonWheng</span></h1><p class="one-liner mono">LLM / Agent · RailGPT · SDR / AIRBAND · 737 / A320</p><p class="contact mono"><a href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a><span class="sep"> · </span><a href="mailto:whengeason@gmail.com">whengeason@gmail.com</a></p></div>
       <aside class="hero-pfd" aria-label="动态 A320 主飞行显示器"><div class="display pfd"></div><span class="hero-pfd-label mono">A320 PFD · LIVE</span></aside>
     </section>
     <section class="cockpit-wrap" aria-label="A320 模拟驾驶舱">
@@ -27,7 +27,20 @@
       <p class="cockpit-caption">A320 模拟驾驶舱：巡航状态演示。</p>
     </section>
     <section class="panel rail-panel"><div class="panel-head"><b class="mono">PROJECT</b><i></i></div><div class="rail-intro"><div><h2>RailGPT<span></span></h2><p>面向铁路信息查询的多 Agent 工具。</p></div><p>RailGPT 是一个 local-first 的铁路问答工具。它将列车、车底、配属和轮换等查询拆开处理，并展示可核验的结果。下面是一次实际查询。</p></div><div class="demo"><div class="demo-label mono">RAILGPT · LOCAL RUN · EXAMPLE QUERY</div><b class="question mono">› G20 是什么车，用的什么动车组？</b><div class="answer"><b class="mono">G20 · 上海虹桥 → 北京南 · 4 小时 36 分</b><p class="mono">上海虹桥 14:00 → 南京南 15:00 → 徐州东 16:11 → 济南西 17:09 → 北京南 18:36</p><small class="mono">京局 · CR400AF-BS 复兴号智能动车组 · 当日配属 CR400AFBS2345 · 30 天 6 组车底轮换</small></div></div><div class="rail-bottom"><p><b class="mono">它怎么查</b><br>识别意图后，按需调用查询工具；上下文用于保留列车、车站和日期。桌面端运行，数据来自 RailGo、rail.re 和 12306.cn；仅提供查询。</p><div><a class="btn primary" href="https://github.com/EasonWheng/RailGPT" target="_blank" rel="noopener">看看 RailGPT ↗</a><a class="btn" href="https://github.com/EasonWheng/RailGPT/releases/tag/v2.6.6" target="_blank" rel="noopener">下载 v2.6.6</a></div></div></section>
-    <section class="panel"><div class="panel-head"><b class="mono">INTERESTS</b><i></i></div><div class="grid"><article><b class="mono">01 / LLM · AGENT</b><h3>LLM · Agent · 生成式软件工程</h3><p>关注 Agent 的任务分解、工具调用、上下文管理和可追溯执行。</p></article><article><b class="mono">02 / FLIGHT</b><h3>737 / A320 飞行</h3><p>喜欢仪表设计、检查单和标准喊话：它们把复杂操作变成可验证的步骤。</p></article><article><b class="mono">03 / RADIO</b><h3>认知无线电</h3><p>关注频谱感知、干扰环境下的机会接入，以及频谱资源如何被更好利用。</p></article></div></section>
+    <section class="panel air-project" id="air-project">
+      <div class="panel-head"><b class="mono">NEXT PROJECT</b><i></i></div>
+      <div class="air-project-intro"><div><p class="mono">PLANNING · RECEIVE ONLY</p><h2>SDR / ADS-B<span></span></h2></div><p>一个给飞行爱好者用的空地运行工具：同时听多路航空频段，把语音、航班位置和机场运行放进同一个 App。</p></div>
+      <div class="air-pipeline mono" aria-label="项目数据流程"><span>ZYNQ-7020<br><b>MULTI-CHANNEL SDR</b></span><i>→</i><span>DEMOD + AUDIO<br><b>REALTIME MODEL</b></span><i>→</i><span>ATC + ADS-B<br><b>EVENT FUSION</b></span><i>→</i><span>APP + SERVER<br><b>SEARCH / FEED / PUSH</b></span></div>
+      <div class="air-capabilities">
+        <article><b class="mono">01 / RECEIVE</b><h3>多路信号同时监听</h3><p>ZYNQ-7020 配合软件无线电，对多路航空频段信号进行实时解调与音频推流。</p></article>
+        <article><b class="mono">02 / UNDERSTAND</b><h3>实时语音与事件提取</h3><p>接入 OpenAI 实时音频模型，将通话转成可检索的信息流，并识别航班、跑道、放行与异常事件。</p></article>
+        <article><b class="mono">03 / SITUATION</b><h3>ADS-B 空地可视化</h3><p>融合公开 ADS-B 数据展示航班与机场运行；FlightRadar24 作为外部航班比对入口。</p></article>
+        <article><b class="mono">04 / ALERT</b><h3>7700 等代码识别</h3><p>按机场、航班和应答机代码建立规则，向 App 推送值得关注的运行事件。</p></article>
+        <article><b class="mono">05 / COMMUNITY</b><h3>飞友节点与社区</h3><p>计划运行服务器，连接不同地方的接收节点与飞行爱好者，提供搜索、信息流和个性化推荐。</p></article>
+      </div>
+      <div class="air-project-foot"><p><b class="mono">SCOPE</b><br>目前处于准备开发阶段。产品只接收与整理信息，不参与通信或运行控制；上线前核对信号接收、内容再分发、隐私和数据来源规则。</p><div><a class="btn" href="https://platform.openai.com/docs/api-reference/realtime" target="_blank" rel="noopener">OpenAI Realtime ↗</a><a class="btn" href="https://www.flightradar24.com/" target="_blank" rel="noopener">FlightRadar24 ↗</a></div></div>
+    </section>
+    <section class="panel"><div class="panel-head"><b class="mono">INTERESTS</b><i></i></div><div class="grid"><article><b class="mono">01 / LLM · AGENT</b><h3>LLM · Agent · 生成式软件工程</h3><p>关注 Agent 的任务分解、工具调用、上下文管理和可追溯执行。</p></article><article><b class="mono">02 / FLIGHT</b><h3>737 / A320 飞行</h3><p>喜欢仪表设计、检查单和标准喊话：它们把复杂操作变成可验证的步骤。</p></article><article><b class="mono">03 / SDR · ADS-B</b><h3>航空频段与空地运行</h3><p>喜欢从无线电语音、ADS-B 航迹和机场状态里看见航班怎样真实运行。</p></article></div></section>
     <section class="panel flight-log" id="flight-log">
       <div class="panel-head"><b class="mono">FLIGHT LOG</b><i></i></div>
       <div class="flight-log-intro">
