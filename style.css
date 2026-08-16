@@ -738,7 +738,7 @@ a:focus-visible, .btn:focus-visible {
 .scenario-flow span { flex:none; }
 .scenario-flow i { flex:none; color:#66d4ff; font-style:normal; }
 .exercise-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
-.uprt-grid { grid-template-columns:repeat(2,1fr); }
+.uprt-grid,.approach-grid { grid-template-columns:repeat(2,1fr); }
 .exercise-grid article { min-height:164px; padding:20px; background:var(--card); border:1px solid var(--line); border-radius:7px; box-shadow:var(--shadow); }
 .exercise-grid article > b { color:var(--amber); font-size:9px; letter-spacing:.1em; }
 .exercise-grid h3 { margin:12px 0 7px; font-size:16px; }
@@ -786,8 +786,8 @@ a:focus-visible, .btn:focus-visible {
 .reference-grid b { color:var(--blue); font:700 9px "B612 Mono",monospace; letter-spacing:.1em; }
 .reference-grid span { margin:10px 0 14px; font-size:12px; line-height:1.55; }
 .reference-grid i { margin-top:auto; color:var(--muted-2); font:normal 9px "B612 Mono",monospace; }
-@media(max-width:900px){.exercise-grid{grid-template-columns:repeat(2,1fr)}.approach-grid article:last-child{grid-column:1/-1}.reference-grid{grid-template-columns:repeat(2,1fr)}.reference-grid a{border-bottom:1px solid var(--line-strong)}.reference-grid a + a{border-left:0}.reference-grid a:nth-child(even){border-left:1px solid var(--line-strong)}}
-@media(max-width:700px){.flight-log-intro,.flight-debrief{grid-template-columns:1fr;gap:16px}.flight-meta{grid-template-columns:repeat(2,1fr)}.flight-meta span:nth-child(3){border-left:0;border-top:1px solid var(--line-strong)}.flight-meta span:nth-child(4){border-top:1px solid var(--line-strong)}.training-group{padding:16px}.training-group-head{display:block}.training-group-head p{margin-top:9px}.scenario-flow{white-space:normal;flex-wrap:wrap;line-height:1.5}.exercise-grid{grid-template-columns:1fr}.approach-grid article:last-child{grid-column:auto}.exercise-grid article{min-height:0}.knowledge-head{display:block}.knowledge-head p{margin-top:9px}.knowledge-track-head{align-items:flex-start;flex-direction:column;gap:3px}.knowledge-grid{grid-template-columns:1fr}.knowledge-grid article{min-height:0}.reading-head{display:block}.reading-head p{margin-top:10px}.reference-grid{grid-template-columns:1fr}.reference-grid a{min-height:105px;border-bottom:1px solid var(--line-strong)!important;border-left:0!important}.reference-grid a:last-child{border-bottom:0!important}}
+@media(max-width:900px){.exercise-grid{grid-template-columns:repeat(2,1fr)}.reference-grid{grid-template-columns:repeat(2,1fr)}.reference-grid a{border-bottom:1px solid var(--line-strong)}.reference-grid a + a{border-left:0}.reference-grid a:nth-child(even){border-left:1px solid var(--line-strong)}}
+@media(max-width:700px){.flight-log-intro,.flight-debrief{grid-template-columns:1fr;gap:16px}.flight-meta{grid-template-columns:repeat(2,1fr)}.flight-meta span:nth-child(3){border-left:0;border-top:1px solid var(--line-strong)}.flight-meta span:nth-child(4){border-top:1px solid var(--line-strong)}.training-group{padding:16px}.training-group-head{display:block}.training-group-head p{margin-top:9px}.scenario-flow{white-space:normal;flex-wrap:wrap;line-height:1.5}.exercise-grid{grid-template-columns:1fr}.exercise-grid article{min-height:0}.knowledge-head{display:block}.knowledge-head p{margin-top:9px}.knowledge-track-head{align-items:flex-start;flex-direction:column;gap:3px}.knowledge-grid{grid-template-columns:1fr}.knowledge-grid article{min-height:0}.reading-head{display:block}.reading-head p{margin-top:10px}.reference-grid{grid-template-columns:1fr}.reference-grid a{min-height:105px;border-bottom:1px solid var(--line-strong)!important;border-left:0!important}.reference-grid a:last-child{border-bottom:0!important}}
 
 /* Planned air/ground product: the aviation counterpart to RailGPT. */
 .air-project-intro { display:grid; grid-template-columns:1fr 1.18fr; gap:36px; align-items:end; }
