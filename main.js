@@ -108,11 +108,13 @@
   }
   function buildNdRose() {
     if (!ndRose) return;
-    var cx = 150, cy = 150;
+    // In ARC mode the compass is a full rotating rose whose centre sits below
+    // the visible map. The display clips it to the upper arc, like an A320 ND.
+    var cx = 150, cy = 255;
     for (var d = 0; d < 360; d += 5) {
       var major = (d % 10 === 0);
       var a = (d - 90) * Math.PI / 180;
-      var r1 = major ? 114 : 120, r2 = 128;
+      var r1 = major ? 126 : 131, r2 = 138;
       ndRose.appendChild(mk("line", {
         x1: cx + r1 * Math.cos(a), y1: cy + r1 * Math.sin(a),
         x2: cx + r2 * Math.cos(a), y2: cy + r2 * Math.sin(a),
@@ -121,7 +123,7 @@
     }
     for (var dd = 0; dd < 360; dd += 10) {
       var aa = (dd - 90) * Math.PI / 180;
-      var rx = cx + 104 * Math.cos(aa), ry = cy + 104 * Math.sin(aa);
+      var rx = cx + 116 * Math.cos(aa), ry = cy + 116 * Math.sin(aa);
       var card = dd === 0 ? "N" : dd === 90 ? "E" : dd === 180 ? "S" : dd === 270 ? "W" : null;
       if (card) {
         var ct = mkText(rx, ry, card, null, { fill: "#00ffff", "font-size": 12, "font-weight": "bold" });
