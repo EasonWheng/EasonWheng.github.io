@@ -660,8 +660,12 @@ a:focus-visible, .btn:focus-visible {
 .pfd-fma { z-index:4; grid-template-columns:repeat(5,1fr); top:7px; }
 .pfd-fma span { color:#00ff00; font-size:10px; font-weight:700; text-align:center; line-height:1.2; }
 .pfd-fma span:nth-child(4),.pfd-fma span:nth-child(5) { color:#fff; }
+.pfd-fma span + span { border-left:1px solid rgba(255,255,255,.42); }
 .pfd-mode { position:absolute; z-index:4; top:25px; left:0; right:0; display:flex; justify-content:space-around; color:#ff94ff; font:8px var(--mono); letter-spacing:.08em; }
 .pfd-footer { position:absolute; z-index:4; bottom:41px; left:64px; right:64px; display:flex; justify-content:space-between; color:#00ffff; font-size:8px; }
+.pfd-mach,.pfd-baro { position:absolute; z-index:4; bottom:42px; color:#fff; font:7px/1.05 var(--mono); }
+.pfd-mach { left:4px; }.pfd-baro { right:4px; text-align:right; }
+.pfd-mach span,.pfd-baro span { display:block; color:#00ffff; }.pfd-mach b,.pfd-baro b { font-size:11px; font-weight:500; }
 .pfd-adi .fd { filter:drop-shadow(0 0 2px rgba(255,148,255,.65)); }
 .pfd-adi > polygon { filter:drop-shadow(0 1px 1px #000); }
 .adi-world,.adi-roll { transform-box:view-box; transform-origin:100px 100px; will-change:transform; }
