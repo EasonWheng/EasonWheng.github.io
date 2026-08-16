@@ -28,5 +28,35 @@
     </section>
     <section class="panel rail-panel"><div class="panel-head"><b class="mono">PROJECT</b><i></i></div><div class="rail-intro"><div><h2>RailGPT<span></span></h2><p>面向铁路信息查询的多 Agent 工具。</p></div><p>RailGPT 是一个 local-first 的铁路问答工具。它将列车、车底、配属和轮换等查询拆开处理，并展示可核验的结果。下面是一次实际查询。</p></div><div class="demo"><div class="demo-label mono">RAILGPT · LOCAL RUN · EXAMPLE QUERY</div><b class="question mono">› G20 是什么车，用的什么动车组？</b><div class="answer"><b class="mono">G20 · 上海虹桥 → 北京南 · 4 小时 36 分</b><p class="mono">上海虹桥 14:00 → 南京南 15:00 → 徐州东 16:11 → 济南西 17:09 → 北京南 18:36</p><small class="mono">京局 · CR400AF-BS 复兴号智能动车组 · 当日配属 CR400AFBS2345 · 30 天 6 组车底轮换</small></div></div><div class="rail-bottom"><p><b class="mono">它怎么查</b><br>识别意图后，按需调用查询工具；上下文用于保留列车、车站和日期。桌面端运行，数据来自 RailGo、rail.re 和 12306.cn；仅提供查询。</p><div><a class="btn primary" href="https://github.com/EasonWheng/RailGPT" target="_blank" rel="noopener">看看 RailGPT ↗</a><a class="btn" href="https://github.com/EasonWheng/RailGPT/releases/tag/v2.6.6" target="_blank" rel="noopener">下载 v2.6.6</a></div></div></section>
     <section class="panel"><div class="panel-head"><b class="mono">INTERESTS</b><i></i></div><div class="grid"><article><b class="mono">01 / LLM · AGENT</b><h3>LLM · Agent · 生成式软件工程</h3><p>关注 Agent 的任务分解、工具调用、上下文管理和可追溯执行。</p></article><article><b class="mono">02 / FLIGHT</b><h3>737 / A320 飞行</h3><p>喜欢仪表设计、检查单和标准喊话：它们把复杂操作变成可验证的步骤。</p></article><article><b class="mono">03 / RADIO</b><h3>认知无线电</h3><p>关注频谱感知、干扰环境下的机会接入，以及频谱资源如何被更好利用。</p></article></div></section>
+    <section class="panel flight-log" id="flight-log">
+      <div class="panel-head"><b class="mono">FLIGHT LOG</b><i></i></div>
+      <div class="flight-log-intro">
+        <div><p class="flight-kicker mono">2026.08.12 · 2H · A320-200</p><h2>UPRT / 大侧风训练<span></span></h2></div>
+        <p>一次模拟机训练记录：从失速与异常姿态改出，一直练到风切变、重着陆和大侧风进近。</p>
+      </div>
+      <div class="flight-meta mono"><span><b>TYPE</b>A320-200</span><span><b>SESSION</b>UPRT + APPROACH</span><span><b>TIME</b>2 HOURS</span><span><b>DATE</b>12 AUG 2026</span></div>
+      <div class="exercise-grid">
+        <article><b class="mono">01 / UPSET</b><h3>倒飞失速改出</h3><p>教员施加蹬舵扰动后进入倒飞失速情景；先减小迎角，再协调滚转，并持续监控改出中的超速趋势。</p></article>
+        <article><b class="mono">02 / STALL</b><h3>起飞构型失速</h3><p>完成初始改出后控制俯仰节奏，避免急于带杆造成迎角再次超限与二次失速。</p></article>
+        <article><b class="mono">03 / NOSE LOW</b><h3>近 90° 俯冲情景</h3><p>模拟处置启动过晚后的极端俯冲，观察近地高度快速消耗，复盘识别与动作窗口。</p></article>
+        <article><b class="mono">04 / WINDSHEAR</b><h3>起飞 / 低高度风切变</h3><p>练习快速识别、保持飞行轨迹，以及进近条件恶化时及时作出复飞决断。</p></article>
+        <article><b class="mono">05 / ENERGY</b><h3>重着陆与能量</h3><p>根据两次重着陆后的模拟机告警，复盘下沉率监控、接地时机与载荷控制。</p></article>
+        <article><b class="mono">06 / CROSSWIND</b><h3>大侧风着陆</h3><p>持续修正偏流，协调方向舵与副翼，稳定进近，并在接地阶段完成航向与侧滑控制。</p></article>
+      </div>
+      <div class="flight-debrief">
+        <div><b class="mono">DEBRIEF / 继续练</b><ul><li>更早识别姿态与能量趋势，不等警告替自己做决定。</li><li>失速解除后仍要守住速度与载荷，避免二次失速或超速。</li><li>低高度特情减少犹豫；条件不满足就复飞。</li><li>大侧风接地前持续监控下沉率，不把修正留到最后一刻。</li></ul></div>
+        <details><summary class="mono">展开训练过程记录</summary><div class="flight-detail"><p>开篇进行高空正常姿态失速。教员突然蹬舵施加不对称扰动，飞机翻转进入倒飞并触发失速情景。我先调整俯仰、减小迎角，再协调滚转恢复正飞；改出时空速快速增加，因此继续用柔和俯仰输入平衡速度和姿态。</p><p>随后练习起飞构型失速，重点不是“做完改出动作”，而是避免改出后粗暴带杆导致二次失速。极端处置失败场景中，飞机以接近 90° 俯角向地面发展；触地反弹属于本次模拟机的场景反馈，不代表真实飞机行为。</p><p>后半段包括起飞风切变、低高度进近风切变、重着陆和大侧风着陆。主要复盘点是飞行轨迹优先、复飞决断、下沉率与接地能量，以及侧风中的持续协调操纵。</p></div></details>
+      </div>
+      <div class="flight-reading">
+        <div class="reading-head"><div><b class="mono">OFFICIAL READING</b><h3>公开的标准资料</h3></div><p>这是学习索引，不是操作检查单。实际飞行必须使用当前有效的 FCOM、QRH、FCTM、运营人 SOP，并服从合格教员指令。</p></div>
+        <div class="reference-grid">
+          <a href="https://safetyfirst.airbus.com/control-your-speed-in-cruise/" target="_blank" rel="noopener"><b>AIRBUS</b><span>失速、速度衰减与超速风险</span><i>Safety First ↗</i></a>
+          <a href="https://safetyfirst.airbus.com/lateral-runway-excursions-upon-landing/" target="_blank" rel="noopener"><b>AIRBUS</b><span>侧风着陆与跑道侧向控制</span><i>Safety First ↗</i></a>
+          <a href="https://www.icao.int/sites/default/files/safety/LOCI/AUPRTA/full.html" target="_blank" rel="noopener"><b>ICAO + OEM</b><span>Airbus / Boeing 等共同参与的 AUPRTA Rev.3</span><i>Training Aid ↗</i></a>
+          <a href="https://www.faa.gov/regulations_policies/advisory_circulars/index.cfm/go/document.information/documentID/1027328" target="_blank" rel="noopener"><b>FAA</b><span>AC 120-111 · UPRT 指导材料</span><i>Advisory Circular ↗</i></a>
+          <a href="https://www.easa.europa.eu/en/faq/44870" target="_blank" rel="noopener"><b>EASA</b><span>UPRT 定义与训练层级</span><i>Aircrew Rules ↗</i></a>
+        </div>
+      </div>
+    </section>
   </main><footer class="footer mono"><a href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a><span class="sep"> · </span><a href="mailto:whengeason@gmail.com">whengeason@gmail.com</a></footer><script src="main.js"></script>
 </body></html>
