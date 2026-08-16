@@ -25,16 +25,19 @@
     var pfd = document.querySelector(".display.pfd");
     if (!pfd) return;
     pfd.innerHTML = [
-      '<div class="pfd-fma mono"><span>SPEED</span><span>ALT CRZ</span><span>NAV</span><span>AP1</span><span>1 FD 2</span></div>',
-      '<div class="pfd-mode mono"><span>A/THR</span><span>ALT</span><span>RWY</span></div>',
-      '<svg class="pfd-adi" viewBox="0 0 200 200" aria-hidden="true"><defs><clipPath id="pfd-adi-clip"><path d="M18 62C34 35 64 20 100 20s66 15 82 42v83c-16 27-46 42-82 42s-66-15-82-42z"/></clipPath></defs><g clip-path="url(#pfd-adi-clip)"><g id="adiWorld" class="adi-world"><g id="adiRoll" class="adi-roll"><rect x="-130" y="-170" width="460" height="270" fill="#0698ff"/><rect x="-130" y="100" width="460" height="280" fill="#9c480c"/><line x1="-130" y1="100" x2="330" y2="100" stroke="#fff" stroke-width="1.6"/><g class="pitch-ladder" stroke="#fff" stroke-width="1.15" fill="#fff" font-size="7" text-anchor="middle"><path d="M76 40h48M84 50h32M68 60h64M84 70h32M76 80h48M84 90h32M84 110h32M76 120h48M84 130h32M68 140h64M84 150h32M76 160h48"/><text x="62" y="63">20</text><text x="138" y="63">20</text><text x="70" y="83">10</text><text x="130" y="83">10</text><text x="70" y="123">10</text><text x="130" y="123">10</text><text x="62" y="143">20</text><text x="138" y="143">20</text></g></g></g></g><g class="bank-scale" fill="none" stroke="#fff" stroke-width="1.35"><path d="M43 55l7 4M58 36l6 8M79 24l3 9M100 20v10M121 24l-3 9M142 36l-6 8M157 55l-7 4"/><path d="M94 29h12l-6 9z" fill="#ffff00" stroke="none"/></g><g class="fixed-aircraft" fill="#040404" stroke="#ffff00" stroke-width="2.1" stroke-linejoin="round"><path d="M55 96h29v8h10v-5h-8v-7H55z"/><path d="M145 96h-29v8h-10v-5h8v-7h31z"/><rect x="97" y="99" width="6" height="6"/></g><g class="fd" id="pfdFd" stroke="#00ff00" stroke-width="2.1"><path d="M100 58v27"/><path d="M72 101h56"/></g></svg>',
-      '<svg class="pfd-tape pfd-speed" viewBox="0 0 56 236"><path d="M0 80h18v76H0" fill="none" stroke="#00ff00" stroke-width="2"/><g id="pfdSpeedTape" class="pfd-speed-tape"></g><path d="M56 112h-13v12h13" fill="#ff0"/><rect y="106" width="56" height="24" fill="#040404" stroke="#fff"/><text x="28" y="124" text-anchor="middle" id="pfdSpeedVal" class="pfd-speed-value" fill="#00ff00" font-size="18">260</text></svg>',
-      '<svg class="pfd-tape pfd-alt" viewBox="0 0 56 236"><path d="M56 82H38v74h18" fill="none" stroke="#00ff00" stroke-width="2"/><g id="pfdAltTape" class="pfd-alt-tape"></g><path d="M0 112h13v12H0" fill="#ff0"/><rect y="106" width="56" height="24" fill="#040404" stroke="#fff"/><text x="28" y="124" text-anchor="middle" id="pfdAltVal" class="pfd-alt-value" fill="#00ff00" font-size="16">10200</text><text x="28" y="228" text-anchor="middle" fill="#00ffff" font-size="8">QNH 1013</text></svg>',
-      '<svg class="pfd-tape pfd-hdg" viewBox="0 0 320 40"><g id="pfdHdgTape" class="pfd-hdg-tape"></g><path d="M160 0 155 8h10z" fill="#ff0"/><rect x="142" y="15" width="36" height="20" fill="#040404" stroke="#fff"/><text x="160" y="30" text-anchor="middle" id="pfdHdgVal" class="pfd-hdg-value" fill="#00ff00" font-size="15">180</text></svg>',
-      '<svg class="pfd-vs" viewBox="0 0 34 160"><g stroke="rgba(255,255,255,.6)" stroke-width="1"><path d="M2 20h28M2 50h20M2 80h28M2 110h20M2 140h28"/></g><text x="2" y="17" fill="#fff" font-size="8">6</text><text x="2" y="77" fill="#fff" font-size="8">0</text><text x="2" y="137" fill="#fff" font-size="8">6</text><rect x="8" y="74" width="18" height="12" fill="#040404" stroke="#fff"/><text x="17" y="83" text-anchor="middle" id="pfdVsVal" fill="#00ff00" font-size="9">+0</text></svg>',
-      '<div class="pfd-mach mono"><span>MACH</span><b>.785</b></div>',
-      '<div class="pfd-baro mono"><span>QNH</span><b>1013</b></div>',
-      '<div class="pfd-footer mono"><span>LS</span><span>HDG</span><span>V/S</span></div>'
+      '<svg class="pfd-layout" viewBox="0 0 158.75 158.75" aria-label="A320 primary flight display">',
+      '<defs><clipPath id="attitudeClip"><path d="M32.2 60.4C39.6 47 53.7 38.7 68.9 38.7S98.2 47 105.6 60.4v40.9c-7.4 13.3-21.5 21.6-36.7 21.6s-29.3-8.3-36.7-21.6z"/></clipPath><clipPath id="speedClip"><rect x="1" y="25" width="28" height="96"/></clipPath><clipPath id="altClip"><rect x="114.5" y="25" width="21.5" height="96"/></clipPath><clipPath id="hdgClip"><rect x="31.8" y="139" width="74.2" height="19.75"/></clipPath></defs>',
+      '<rect width="158.75" height="158.75" fill="#040404"/>',
+      '<g class="pfd-fma-svg"><path d="M0 18.5h158.75M31 0v18.5M61 0v18.5M96 0v18.5M126 0v18.5"/><g class="fma-green"><text x="15.5" y="6.2">SPEED</text><text x="46" y="6.2">ALT CRZ</text><text x="78.5" y="6.2">NAV</text></g><g class="fma-white"><text x="111" y="6.2">AP1</text><text x="142.3" y="6.2">1 FD 2</text></g><g class="fma-magenta"><text x="15.5" y="13.2">A/THR</text><text x="46" y="13.2">ALT</text><text x="78.5" y="13.2">RWY</text></g></g>',
+      '<g clip-path="url(#attitudeClip)"><g id="adiWorld" class="adi-world"><g id="adiRoll" class="adi-roll"><rect x="-55" y="-75" width="248" height="155.8" fill="#0698ff"/><rect x="-55" y="80.8" width="248" height="170" fill="#9c480c"/><path d="M-55 80.8H193" stroke="#fff" stroke-width=".72"/><g class="pitch-ladder"><path d="M59.4 49.8h19M62.8 57.3h12.2M55.8 64.8H82M62.8 72.3H75M62.8 89.3H75M55.8 96.8H82M62.8 104.3H75M59.4 111.8h19"/><text x="52.3" y="66.3">20</text><text x="85.5" y="66.3">20</text><text x="56.2" y="74">10</text><text x="81.8" y="74">10</text><text x="56.2" y="98.4">10</text><text x="81.8" y="98.4">10</text><text x="52.3" y="113.5">20</text><text x="85.5" y="113.5">20</text></g></g></g></g>',
+      '<g class="bank-scale"><path d="M39.2 51.1l2.8 2M47 43.5l2.3 3.1M58.8 38.9l1.2 3.8M68.9 37.5v4M79 38.9l-1.2 3.8M90.8 43.5l-2.3 3.1M98.6 51.1l-2.8 2"/></g><g id="pfdBankPointer"><path d="M66.4 38.6h5l-2.5 3.7z" class="yellow-fill"/><path d="M66.8 45.2h4.2l-2.1-3.2z" class="white-fill"/></g>',
+      '<g class="fixed-aircraft"><path d="M34.15 79.56h15.11v6.55h-2.52v-4.03H34.15zM103.66 79.56H88.55v6.55h2.52v-4.03h12.59z"/><path d="M67.65 79.56h2.52v2.52h-2.52z"/></g><g id="pfdFd" class="flight-director"><path d="M68.9 62v15.5M49.3 80.8h39.3"/></g>',
+      '<g clip-path="url(#speedClip)" id="pfdSpeedTape" class="pfd-speed-tape"></g><path d="M1 58h8v45H1M29 78.3h-6.2l3.1-2.8" class="green-stroke"/><path d="M29 64.5h-5l2.6-2.5" class="magenta-fill"/><path d="M1 76.2h27.7v9.3H1z" class="readout-box"/><text x="14.8" y="83" id="pfdSpeedVal" class="readout-green">260</text>',
+      '<g clip-path="url(#altClip)" id="pfdAltTape" class="pfd-alt-tape"></g><path d="M135.8 58h-7v45h7M114.5 78.3h6.2l-3.1-2.8" class="green-stroke"/><path d="M114.5 63.5h5l-2.6-2.5" class="magenta-fill"/><path d="M114.5 76.2h21.3v9.3h-21.3z" class="readout-box"/><text x="125.1" y="82.6" id="pfdAltVal" class="readout-green pfd-alt-value">10200</text>',
+      '<g class="vs-scale"><path d="M140 25h5l10 55.8-10 55.8h-5"/><path d="M140 31h6M140 53h4M140 80.8h7M140 108.6h4M140 130.6h6"/><text x="149" y="31">6</text><text x="147" y="53">2</text><text x="147" y="111">2</text><text x="149" y="134">6</text></g><g id="pfdVsNeedle" class="vs-needle"><path d="M140 80.8h15"/><circle cx="140" cy="80.8" r="1"/></g><text x="151" y="79" id="pfdVsVal" class="vs-value">+0</text>',
+      '<g clip-path="url(#hdgClip)" id="pfdHdgTape" class="pfd-hdg-tape"></g><path d="M68.9 139l-2.2 3.2h4.4z" class="yellow-fill"/><path d="M60.5 147h16.8v8.5H60.5z" class="readout-box"/><text x="68.9" y="153.2" id="pfdHdgVal" class="readout-green">180</text>',
+      '<g class="pfd-offtape"><text x="1.5" y="127" class="cyan">MACH</text><text x="1.5" y="133.5">.785</text><text x="32.5" y="132" class="cyan">LS</text><text x="93" y="132" class="cyan">V/S</text><text x="114.5" y="127" class="cyan">QNH</text><text x="114.5" y="133.5">1013</text><text x="44" y="136.5" class="cyan">ILS</text><text x="82" y="136.5" class="cyan">HDG</text></g>',
+      '</svg>'
     ].join("");
   }
   installPfd();
@@ -43,7 +46,7 @@
   var adiWorld = $("adiWorld"), adiRoll = $("adiRoll");
   var speedTape = $("pfdSpeedTape"), altTape = $("pfdAltTape"), hdgTape = $("pfdHdgTape");
   var speedVal = $("pfdSpeedVal"), altVal = $("pfdAltVal"), hdgVal = $("pfdHdgVal"), vsVal = $("pfdVsVal");
-  var pfdFd = $("pfdFd"), ecamFob = $("ecamFOB");
+  var pfdFd = $("pfdFd"), pfdBankPointer = $("pfdBankPointer"), pfdVsNeedle = $("pfdVsNeedle"), ecamFob = $("ecamFOB");
   var fcuSpeed = $("fcuSpeed"), fcuHdg = $("fcuHdg"), fcuAlt = $("fcuAlt");
   var ndRose = $("ndRose"), ndHdgVal = $("ndHdgVal");
   var ecam = {
@@ -68,43 +71,43 @@
   /* ══════════ 构建磁带刻度(间隔取 FlyByWire 精确值) ══════════ */
   function buildSpeedTape() {
     if (!speedTape) return;
-    var cy = 118, px = 5, base = 260;
+    var cy = 80.8, px = 1.15, base = 260;
     for (var v = 200; v <= 320; v += 10) {
       var y = cy - (v - base) * px;
-      if (y < -20 || y > 256) continue;
+      if (y < 15 || y > 130) continue;
       var major = (v % 20 === 0);
-      speedTape.appendChild(mk("line", { x1: major ? 22 : 42, x2: 56, y1: y, y2: y, stroke: major ? "#ffffff" : "rgba(255,255,255,0.35)", "stroke-width": major ? 1.5 : 1 }));
+      speedTape.appendChild(mk("line", { x1: major ? 22 : 25, x2: 29, y1: y, y2: y, stroke: major ? "#ffffff" : "rgba(255,255,255,0.5)", "stroke-width": major ? 0.65 : 0.4 }));
       if (major) {
-        var t = mkText(18, y + 3, String(v), null, { "text-anchor": "end", "font-size": 9 });
+        var t = mkText(12.5, y + 1.5, String(v), null, { "text-anchor": "middle", "font-size": 4.3 });
         speedTape.appendChild(t);
       }
     }
   }
   function buildAltTape() {
     if (!altTape) return;
-    var cy = 118, px = 0.2, base = 10200;
+    var cy = 80.8, px = 0.035, base = 10200;
     for (var f = 9800; f <= 10600; f += 100) {
       var y = cy - (f - base) * px;
-      if (y < -20 || y > 256) continue;
-      var major = (f % 500 === 0);
-      altTape.appendChild(mk("line", { x1: 0, x2: major ? 34 : 14, y1: y, y2: y, stroke: major ? "#ffffff" : "rgba(255,255,255,0.35)", "stroke-width": major ? 1.5 : 1 }));
+      if (y < 15 || y > 130) continue;
+      var major = (f % 200 === 0);
+      altTape.appendChild(mk("line", { x1: 114.5, x2: major ? 121 : 118, y1: y, y2: y, stroke: major ? "#ffffff" : "rgba(255,255,255,0.4)", "stroke-width": major ? 0.7 : 0.45 }));
       if (major) {
-        var t = mkText(40, y + 3, String(Math.round(f / 100)), null, { "text-anchor": "start", "font-size": 9 });
+        var t = mkText(128.5, y + 1.4, String(Math.round(f / 100)), null, { "text-anchor": "middle", "font-size": 4.1 });
         altTape.appendChild(t);
       }
     }
   }
   function buildHdgTape() {
     if (!hdgTape) return;
-    var cx = 160, px = 2, base = 180;
+    var cx = 68.9, px = 0.75, base = 180;
     for (var d = 0; d < 360; d += 5) {
       var x = cx + ((d - base + 540) % 360 - 180) * px;
-      if (x < -30 || x > 350) continue;
+      if (x < 20 || x > 117) continue;
       var major = (d % 10 === 0);
-      hdgTape.appendChild(mk("line", { x1: x, x2: x, y1: major ? 4 : 10, y2: 14, stroke: major ? "#ffffff" : "rgba(255,255,255,0.35)", "stroke-width": major ? 1.5 : 1 }));
+      hdgTape.appendChild(mk("line", { x1: x, x2: x, y1: major ? 140 : 142, y2: 145, stroke: major ? "#ffffff" : "rgba(255,255,255,0.45)", "stroke-width": major ? 0.7 : 0.45 }));
       if (major) {
         var lbl = String(Math.round(d / 10));
-        hdgTape.appendChild(mkText(x, 30, lbl, null, { "font-size": (d % 30 === 0) ? 12 : 9, fill: (d % 30 === 0) ? "#ffffff" : "rgba(255,255,255,0.75)" }));
+        hdgTape.appendChild(mkText(x, 149.2, lbl, null, { "font-size": (d % 30 === 0) ? 4.8 : 4, fill: "#ffffff" }));
       }
     }
   }
@@ -140,6 +143,7 @@
   buildSpeedTape(); buildAltTape(); buildHdgTape(); buildNdRose();
 
   function installMainInstrumentPanel() {
+    if (document.querySelector(".hero-pfd")) return;
     var panel = document.querySelector(".cockpit-inner");
     var captainPfd = document.querySelector(".display.pfd");
     var captainNd = document.querySelector(".display.nd");
@@ -242,13 +246,15 @@
       var k = 1 - Math.exp(-dt / TAU);
       for (var key in tg) st[key] += (tg[key] - st[key]) * k;
 
-      if (adiWorld) adiWorld.style.transform = "translateY(" + (st.pitch * 3).toFixed(2) + "px)";
+      if (adiWorld) adiWorld.style.transform = "translateY(" + (st.pitch * 1.15).toFixed(2) + "px)";
       if (adiRoll) adiRoll.style.transform = "rotate(" + st.roll.toFixed(2) + "deg)";
-      if (speedTape) speedTape.style.transform = "translateY(" + ((st.speed - base.speed) * 5).toFixed(2) + "px)";
-      if (altTape) altTape.style.transform = "translateY(" + ((st.alt - base.alt) * 0.2).toFixed(2) + "px)";
-      if (hdgTape) hdgTape.style.transform = "translateX(" + (-(st.hdg - base.hdg) * 2).toFixed(2) + "px)";
+      if (speedTape) speedTape.style.transform = "translateY(" + ((st.speed - base.speed) * 1.15).toFixed(2) + "px)";
+      if (altTape) altTape.style.transform = "translateY(" + ((st.alt - base.alt) * 0.035).toFixed(2) + "px)";
+      if (hdgTape) hdgTape.style.transform = "translateX(" + (-(st.hdg - base.hdg) * 0.75).toFixed(2) + "px)";
       if (ndRose) ndRose.style.transform = "rotate(" + (-st.hdg).toFixed(2) + "deg)";
-      if (pfdFd) pfdFd.style.transform = "translate(" + (-st.roll * 0.45).toFixed(2) + "px," + (-st.pitch * 2).toFixed(2) + "px)";
+      if (pfdFd) pfdFd.style.transform = "translate(" + (-st.roll * 0.18).toFixed(2) + "px," + (-st.pitch * 0.7).toFixed(2) + "px)";
+      if (pfdBankPointer) pfdBankPointer.setAttribute("transform", "rotate(" + st.roll.toFixed(2) + " 68.9 80.8)");
+      if (pfdVsNeedle) pfdVsNeedle.setAttribute("transform", "rotate(" + Math.max(-42, Math.min(42, st.vs / 24)).toFixed(2) + " 140 80.8)");
 
       if (mirrors.pfdWorld) mirrors.pfdWorld.style.transform = "translateY(" + (st.pitch * 3).toFixed(2) + "px)";
       if (mirrors.pfdRoll) mirrors.pfdRoll.style.transform = "rotate(" + st.roll.toFixed(2) + "deg)";

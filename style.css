@@ -638,6 +638,11 @@ a:focus-visible, .btn:focus-visible {
 .name-en { display:inline-block; margin:0 0 0 12px; vertical-align:.16em; }
 .hero-note { padding:15px 0 15px 17px; border-left:2px solid var(--amber); color:var(--ink-soft); font-size:13.5px; line-height:1.7; }
 .hero-note b { display:block; margin-bottom:6px; color:var(--amber); font-size:10px; letter-spacing:.12em; }
+.hero { grid-template-columns:120px minmax(0,1fr) 316px; align-items:center; }
+.hero-pfd { position:relative; width:300px; justify-self:end; padding:10px 10px 24px; border-radius:9px; background:linear-gradient(145deg,#4f504b,#292c2c 48%,#42423d); border:1px solid #77766e; box-shadow:inset 0 1px rgba(255,255,255,.2),0 17px 34px rgba(19,25,31,.2); }
+.hero-pfd .display.pfd { width:278px; height:278px; border:10px solid #17191a; border-radius:5px; outline:1px solid #565650; box-shadow:inset 0 0 0 1px #77766e,inset 0 0 0 3px #080909,0 0 0 3px #30312e,0 6px 11px rgba(0,0,0,.76); }
+.hero-pfd-label { position:absolute; left:0; right:0; bottom:5px; color:#aeb5ba; font-size:8px; letter-spacing:.16em; text-align:center; }
+.cockpit-wrap { display:none; }
 .cockpit-wrap { max-width:1160px; margin:0 auto; padding:0 24px 52px; }
 .cockpit-heading { display:flex; justify-content:space-between; padding:0 8px 9px; color:var(--muted); font-size:10px; letter-spacing:.12em; }
 .cockpit { max-width:none; padding:16px 28px 14px; background:repeating-linear-gradient(112deg,rgba(255,255,255,.025) 0 1px,transparent 1px 4px),linear-gradient(155deg,#56554e 0,#24272a 42%,#3d3d39 100%); border:1px solid #787870; border-radius:0 0 18px 18px; clip-path:polygon(2.5% 0,97.5% 0,100% 4%,100% 100%,0 100%,0 4%); box-shadow:0 18px 40px rgba(16,20,25,.25),inset 0 1px rgba(255,255,255,.28); overflow:hidden; }
@@ -666,6 +671,23 @@ a:focus-visible, .btn:focus-visible {
 .pfd-mach,.pfd-baro { position:absolute; z-index:4; bottom:42px; color:#fff; font:7px/1.05 var(--mono); }
 .pfd-mach { left:4px; }.pfd-baro { right:4px; text-align:right; }
 .pfd-mach span,.pfd-baro span { display:block; color:#00ffff; }.pfd-mach b,.pfd-baro b { font-size:11px; font-weight:500; }
+.pfd-layout { position:absolute; inset:0; width:100%; height:100%; overflow:hidden; background:#040404; shape-rendering:geometricPrecision; }
+.display.pfd .pfd-layout text { font-family:"B612 Mono",monospace; font-variant-numeric:tabular-nums; }
+.pfd-fma-svg { fill:none; stroke:rgba(255,255,255,.48); stroke-width:.32; }
+.pfd-fma-svg text { stroke:none; text-anchor:middle; font-size:4px; font-weight:700; }
+.pfd-fma-svg .fma-green { fill:#00ff00; }.pfd-fma-svg .fma-white { fill:#fff; }.pfd-fma-svg .fma-magenta { fill:#ff94ff; }
+.pitch-ladder { fill:#fff; stroke:#fff; stroke-width:.58; text-anchor:middle; font-size:3.7px; }
+.bank-scale { fill:none; stroke:#fff; stroke-width:.62; stroke-linecap:square; }
+.white-fill { fill:#fff; }.yellow-fill { fill:#ffff00; }.magenta-fill { fill:#ff94ff; }
+.fixed-aircraft { fill:#040404; stroke:#ffff00; stroke-width:.92; stroke-linejoin:round; }
+.flight-director { fill:none; stroke:#00ff00; stroke-width:.85; filter:drop-shadow(0 0 .55px rgba(0,255,0,.65)); }
+.green-stroke { fill:none; stroke:#00ff00; stroke-width:.85; }.readout-box { fill:#040404; stroke:#fff; stroke-width:.48; }
+.readout-green { fill:#00ff00; text-anchor:middle; font-size:6.7px; font-weight:700; }
+.pfd-speed-tape,.pfd-alt-tape,.pfd-hdg-tape { will-change:transform; }
+.vs-scale { fill:none; stroke:#fff; stroke-width:.48; }.vs-scale text { fill:#fff; stroke:none; font-size:3.8px; text-anchor:middle; }
+.vs-needle { fill:#00ff00; stroke:#00ff00; stroke-width:.85; filter:drop-shadow(0 0 .45px rgba(0,255,0,.65)); }.vs-value { fill:#00ff00; font-size:3.4px; text-anchor:middle; }
+.pfd-offtape text { fill:#fff; font-size:3.5px; }.pfd-offtape .cyan { fill:#00ffff; font-size:3px; }
+.display.pfd::after { background:linear-gradient(128deg,rgba(132,196,255,.055),transparent 22%,transparent 76%,rgba(255,225,170,.025)); }
 .pfd-adi .fd { filter:drop-shadow(0 0 2px rgba(255,148,255,.65)); }
 .pfd-adi > polygon { filter:drop-shadow(0 1px 1px #000); }
 .adi-world,.adi-roll { transform-box:view-box; transform-origin:100px 100px; will-change:transform; }
@@ -686,3 +708,7 @@ a:focus-visible, .btn:focus-visible {
 .nd-heading-bug { fill:#00ffff; }.nd-aircraft { fill:#ffe600; }.nd-aircraft-wing { stroke:#ffe600; stroke-width:1.5; }
 .system-display { width:270px; height:270px; display:flex; flex-direction:column; justify-content:center; align-items:center; padding:15px; }.system-display svg { width:100%; height:100%; }.sd-title { align-self:flex-start; color:#e68000; font-size:10px; letter-spacing:.14em; }.centre-displays .system-label { margin-top:-3px; }
 @media(max-width:850px){.cockpit-inner{justify-content:start;min-width:744px;overflow:visible;margin-left:0}.cockpit{overflow-x:auto}}
+@media(max-width:1100px){.hero{grid-template-columns:100px minmax(0,1fr) 276px}.hero-pfd{width:260px}.hero-pfd .display.pfd{width:238px;height:238px}}
+@media(max-width:760px){.hero{grid-template-columns:82px 1fr}.hero-pfd{grid-column:1/-1;justify-self:center;width:min(100%,300px)}.hero-pfd .display.pfd{width:100%;height:auto;aspect-ratio:1}.hero + .panel{margin-top:0}}
+@font-face { font-family:"B612 Mono"; src:url("assets/fonts/B612Mono-Regular.ttf") format("truetype"); font-style:normal; font-weight:400; font-display:swap; }
+@font-face { font-family:"B612 Mono"; src:url("assets/fonts/B612Mono-Bold.ttf") format("truetype"); font-style:normal; font-weight:700; font-display:swap; }
