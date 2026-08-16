@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>丁奕禛 · EasonWheng</title>
+<meta name="description" content="丁奕禛 (EasonWheng)——做 LLM / Agent、飞 737 / A320,没事也琢磨认知无线电。最上心的是 RailGPT。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231f6feb'/%3E%3Cpath d='M16 8 L19 24 L16 21 L13 24 Z' fill='%23ffffff'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="accent-bar" aria-hidden="true"></div>
+
+<header class="strip">
+  <div class="strip-inner">
+    <div class="strip-left">
+      <span class="apt mono">ZSNJ · 南京</span>
+      <span class="sep">/</span>
+      <span class="who mono">丁奕禛 · EasonWheng</span>
+    </div>
+    <div class="strip-right">
+      <a class="gh mono" href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a>
+      <span class="sep">·</span>
+      <span class="zulu mono" id="zulu">00:00:00Z</span>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ══════════ HERO ══════════ -->
+  <section class="hero">
+    <img class="avatar" src="https://avatars.githubusercontent.com/u/178960363?v=4&s=200" alt="EasonWheng 的头像" width="120" height="120" />
+    <div class="hero-text">
+      <p class="eyebrow mono">东南大学 · 信息科学与工程学院 · 本科</p>
+      <h1 class="name">丁奕禛<span class="name-en mono">EasonWheng</span></h1>
+      <p class="one-liner">做 LLM / Agent、飞 737 / A320,没事也琢磨认知无线电。最上心的是 RailGPT。</p>
+      <p class="contact mono">
+        <a href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a>
+        <span class="dot-sep">·</span>
+        <a href="mailto:whengeason@gmail.com">whengeason@gmail.com</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ══════════ A320 GLASS COCKPIT ══════════ -->
+  <section class="cockpit" aria-label="A320 玻璃座舱面板">
+    <div class="cockpit-inner">
+
+      <!-- PFD -->
+      <div class="display pfd" aria-hidden="true">
+        <img class="pfd-bg" src="pfd-assets/back.svg" alt="" />
+        <div class="pfd-fma mono">
+          <span class="fma-col" style="color:var(--pfd-green)">SPEED</span>
+          <span class="fma-col" style="color:var(--pfd-green)">ALT CRZ</span>
+          <span class="fma-col" style="color:var(--pfd-green)">NAV</span>
+          <span class="fma-col"></span>
+          <span class="fma-col" style="color:var(--pfd-white)">AP1</span>
+          <span class="fma-col"></span>
+          <span class="fma-col"></span>
+          <span class="fma-col"></span>
+          <span class="fma-col"></span>
+          <span class="fma-col" style="color:var(--pfd-white)">1 FD 2</span>
+        </div>
+
+        <svg class="pfd-adi" viewBox="0 0 200 200">
+          <defs>
+            <clipPath id="pfd-adi-clip"><circle cx="100" cy="100" r="94"/></clipPath>
+          </defs>
+          <g clip-path="url(#pfd-adi-clip)">
+            <g id="adiWorld">
+              <g id="adiRoll">
+                <rect x="-120" y="-160" width="440" height="260" fill="var(--pfd-sky)"/>
+                <rect x="-120" y="100" width="440" height="260" fill="var(--pfd-ground)"/>
+                <g stroke="rgba(255,255,255,0.8)" stroke-width="1.3" fill="#ffffff" font-size="9">
+                  <line x1="60" y1="40" x2="140" y2="40"/><text x="55" y="43" text-anchor="end">20</text><text x="145" y="43">20</text>
+                  <line x1="60" y1="70" x2="140" y2="70"/><text x="55" y="73" text-anchor="end">10</text><text x="145" y="73">10</text>
+                  <line x1="60" y1="130" x2="140" y2="130" stroke-dasharray="4 3"/><text x="55" y="133" text-anchor="end">-10</text><text x="145" y="133">-10</text>
+                  <line x1="60" y1="160" x2="140" y2="160" stroke-dasharray="4 3"/><text x="55" y="163" text-anchor="end">-20</text><text x="145" y="163">-20</text>
+                </g>
+                <line x1="-120" y1="100" x2="320" y2="100" stroke="#ffffff" stroke-width="2"/>
+                <path d="M 28 100 A 72 72 0 0 1 172 100" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="1.4"/>
+                <g stroke="#ffffff" stroke-width="1.6">
+                  <line x1="100" y1="28" x2="100" y2="36"/>
+                  <line x1="112.5" y1="29.1" x2="111.2" y2="36.2"/>
+                  <line x1="87.5" y1="29.1" x2="88.8" y2="36.2"/>
+                  <line x1="124.6" y1="32.4" x2="122.1" y2="39.1"/>
+                  <line x1="75.4" y1="32.4" x2="77.9" y2="39.1"/>
+                  <line x1="136" y1="37.6" x2="132.4" y2="44"/>
+                  <line x1="64" y1="37.6" x2="67.6" y2="44"/>
+                </g>
+              </g>
+            </g>
+          </g>
+          <path d="M100 28 L95 20 L105 20 Z" fill="#ffffff"/>
+          <g stroke="#ffff00" stroke-width="1.6" fill="#000000" stroke-linejoin="round">
+            <path d="M100 97 L66 91 L66 97 L94 97 L94 108 L100 108 Z"/>
+            <path d="M100 97 L134 91 L134 97 L106 97 L106 108 L100 108 Z"/>
+          </g>
+          <circle cx="100" cy="96" r="2.4" fill="#ffff00"/>
+          <circle cx="100" cy="100" r="94" fill="none" stroke="rgba(255,255,255,0.25)" stroke-width="1.5"/>
+        </svg>
+
+        <svg class="pfd-tape pfd-speed" viewBox="0 0 56 236">
+          <rect x="0" y="0" width="56" height="236" fill="rgba(255,255,255,0.03)"/>
+          <g id="pfdSpeedTape"></g>
+          <line x1="56" y1="118" x2="40" y2="118" stroke="#ffff00" stroke-width="2"/>
+          <rect x="0" y="106" width="56" height="24" fill="#040404" stroke="#787878" stroke-width="1"/>
+          <text x="28" y="124" text-anchor="middle" id="pfdSpeedVal" fill="#00ff00" font-size="18">260</text>
+        </svg>
+
+        <svg class="pfd-tape pfd-alt" viewBox="0 0 56 236">
+          <rect x="0" y="0" width="56" height="236" fill="rgba(255,255,255,0.03)"/>
+          <g id="pfdAltTape"></g>
+          <line x1="0" y1="118" x2="16" y2="118" stroke="#ffff00" stroke-width="2"/>
+          <rect x="0" y="106" width="56" height="24" fill="#040404" stroke="#787878" stroke-width="1"/>
+          <text x="28" y="124" text-anchor="middle" id="pfdAltVal" fill="#00ff00" font-size="18">10200</text>
+          <text x="28" y="228" text-anchor="middle" fill="#00ffff" font-size="9">QNH 1013</text>
+        </svg>
+
+        <svg class="pfd-tape pfd-hdg" viewBox="0 0 320 40">
+          <rect x="0" y="0" width="320" height="40" fill="rgba(255,255,255,0.03)"/>
+          <g id="pfdHdgTape"></g>
+          <path d="M160 0 L155 8 L165 8 Z" fill="#ffff00"/>
+          <rect x="142" y="14" width="36" height="22" fill="#040404" stroke="#787878" stroke-width="1"/>
+          <text x="160" y="31" text-anchor="middle" id="pfdHdgVal" fill="#00ff00" font-size="16">180</text>
+        </svg>
+
+        <svg class="pfd-vs" viewBox="0 0 34 160">
+          <g stroke="rgba(255,255,255,0.4)" stroke-width="1">
+            <line x1="0" y1="12" x2="34" y2="12"/><text x="2" y="16" fill="#fff" font-size="8" font-family="var(--mono)">6</text>
+            <line x1="0" y1="40" x2="34" y2="40"/><text x="2" y="44" fill="#fff" font-size="8" font-family="var(--mono)">2</text>
+            <line x1="0" y1="52" x2="34" y2="52"/><text x="2" y="56" fill="#fff" font-size="8" font-family="var(--mono)">1</text>
+            <line x1="0" y1="80" x2="34" y2="80" stroke="#787878"/>
+            <line x1="0" y1="108" x2="34" y2="108"/><text x="2" y="112" fill="#fff" font-size="8" font-family="var(--mono)">1</text>
+            <line x1="0" y1="120" x2="34" y2="120"/><text x="2" y="124" fill="#fff" font-size="8" font-family="var(--mono)">2</text>
+            <line x1="0" y1="148" x2="34" y2="148"/><text x="2" y="152" fill="#fff" font-size="8" font-family="var(--mono)">6</text>
+          </g>
+          <rect x="8" y="74" width="18" height="12" fill="#040404" stroke="#787878" stroke-width="1"/>
+          <text x="17" y="83" text-anchor="middle" id="pfdVsVal" fill="#00ff00" font-size="9" font-family="var(--mono)">+0</text>
+        </svg>
+      </div>
+
+      <!-- ECAM -->
+      <div class="display ecam" aria-hidden="true">
+        <div class="ecam-top">
+          <span class="ecam-tag">E/WD</span>
+          <div class="ecam-fob"><span class="ecam-fob-label">FOB</span><span class="ecam-fob-val" id="ecamFOB">6.4</span><span class="ecam-fob-unit">T</span></div>
+        </div>
+        <div class="ecam-engines">
+          <div class="ecam-eng">
+            <div class="ecam-eng-head">ENG <b>1</b></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">N1</span><span class="ecam-param-val"><span id="ecamN1a">58.4</span><i class="ecam-unit">%</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:58.4%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">EGT</span><span class="ecam-param-val"><span id="ecamEGTa">612</span><i class="ecam-unit">°C</i></span></div><div class="ecam-bar"><span class="ecam-zone" style="--from:90%;--to:100%"></span><span class="ecam-fill" style="--v:61.2%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">N2</span><span class="ecam-param-val"><span id="ecamN2a">88.7</span><i class="ecam-unit">%</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:88.7%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">FF</span><span class="ecam-param-val"><span id="ecamFFa">1180</span><i class="ecam-unit">KG/H</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:59%"></span></div></div>
+          </div>
+          <div class="ecam-eng">
+            <div class="ecam-eng-head">ENG <b>2</b></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">N1</span><span class="ecam-param-val"><span id="ecamN1b">58.4</span><i class="ecam-unit">%</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:58.4%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">EGT</span><span class="ecam-param-val"><span id="ecamEGTb">612</span><i class="ecam-unit">°C</i></span></div><div class="ecam-bar"><span class="ecam-zone" style="--from:90%;--to:100%"></span><span class="ecam-fill" style="--v:61.2%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">N2</span><span class="ecam-param-val"><span id="ecamN2b">88.7</span><i class="ecam-unit">%</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:88.7%"></span></div></div>
+            <div class="ecam-param"><div class="ecam-param-top"><span class="ecam-param-label">FF</span><span class="ecam-param-val"><span id="ecamFFb">1180</span><i class="ecam-unit">KG/H</i></span></div><div class="ecam-bar"><span class="ecam-fill" style="--v:59%"></span></div></div>
+          </div>
+        </div>
+        <div class="ecam-status">
+          <div class="ecam-status-item"><span class="ecam-status-k">SLATS</span><span class="ecam-status-v">1+F</span></div>
+          <div class="ecam-status-item"><span class="ecam-status-k">FLAPS</span><span class="ecam-status-v">1</span></div>
+          <div class="ecam-status-item"><span class="ecam-status-k">L/G</span><span class="ecam-status-v">DN</span></div>
+          <div class="ecam-status-item"><span class="ecam-status-k">SPLR</span><span class="ecam-status-v">ARM</span></div>
+        </div>
+      </div>
+
+      <!-- ND -->
+      <div class="display nd" aria-hidden="true">
+        <svg class="nd-svg" viewBox="0 0 300 300">
+          <g class="nd-rings">
+            <circle cx="150" cy="150" r="40"/><circle cx="150" cy="150" r="68"/><circle cx="150" cy="150" r="96"/>
+          </g>
+          <g class="nd-plan">
+            <path class="nd-route" d="M150 146 L150 106 L170 96 L196 84"/>
+            <path class="nd-wpt-act" d="M150 102 L145 111 L155 111 Z"/>
+            <path class="nd-wpt" d="M170 92 L174 96 L170 100 L166 96 Z"/>
+            <path class="nd-wpt" d="M196 80 L200 84 L196 88 L192 84 Z"/>
+            <text x="157" y="104" class="nd-wpt-name">NJ02</text>
+            <text x="178" y="93" class="nd-wpt-name">NJ03</text>
+            <text x="204" y="81" class="nd-wpt-name">NJ04</text>
+          </g>
+          <g id="ndRose"></g>
+          <path d="M146 15 L154 15 L150 26 Z" fill="var(--pfd-cyan)"/>
+          <g class="nd-acft">
+            <path class="nd-nose" d="M150 137 L145.5 146 L154.5 146 Z"/>
+            <line class="nd-wing" x1="142" y1="143" x2="158" y2="143"/>
+          </g>
+        </svg>
+        <div class="nd-corner nd-hdg"><span class="nd-k">HDG</span><span class="nd-v" id="ndHdgVal">180</span><span class="nd-u">°</span></div>
+        <div class="nd-corner nd-gs"><span class="nd-k">GS</span><span class="nd-v">450</span></div>
+        <div class="nd-corner nd-wind"><span class="nd-k">WIND</span><span class="nd-v">240°</span><span class="nd-u">15KT</span></div>
+        <span class="nd-tag">ND · ROSE NAV · 20NM</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════ ABOUT ══════════ -->
+  <section class="panel" id="about">
+    <div class="panel-head">
+      <span class="panel-flag mono">简介</span>
+      <span class="panel-line"></span>
+    </div>
+    <p class="about-text">
+      主要精力在大语言模型和智能体上。RailGPT 是我把 agent、LLM、生成式软件工程揉在一起练手的地方。飞 737 / A320 和认知无线电,是工作之外还放不下的。
+    </p>
+  </section>
+
+  <!-- ══════════ RailGPT ══════════ -->
+  <section class="panel" id="railgpt">
+    <div class="panel-head">
+      <span class="panel-flag mono">作品</span>
+      <span class="panel-line"></span>
+    </div>
+
+    <h2 class="rail-name">RailGPT</h2>
+    <p class="rail-sub">你问一句车次,它先把车底、配属、轮换查清楚,再开口。</p>
+
+    <p class="rail-lead">
+      一个 <strong>local-first 的多 Agent 铁路助手</strong>。先语义路由、再调最小工具才回答,
+      不让模型凭先验「猜火车」。桌面端能跑,数据接 RailGo / rail.re / 12306.cn。
+      只做咨询,不抢票。
+    </p>
+
+    <div class="demo" aria-label="RailGPT 对话摘录">
+      <div class="demo-label mono">本地 RailGPT 跑出来的一段</div>
+      <div class="turn">
+        <div class="q mono"><span class="q-mark">›</span> G20 是什么车,用的什么动车组</div>
+        <div class="a">
+          <div class="a-meta mono">G20 · 上海虹桥 → 北京南 · 4 小时 36 分</div>
+          <div class="a-route mono">上海虹桥 14:00 → 南京南 15:00 → 徐州东 16:11 → 济南西 17:09 → 北京南 18:36</div>
+          <div class="a-note mono">京局 · CR400AF-BS 复兴号智能动车组 · 今日配属 CR400AFBS2345 · 30 天 6 组车底轮换</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="how">
+      <div class="how-title mono">怎么做的</div>
+      <ul class="how-list">
+        <li>Router–Planner–Executor 分层,再加一个独立的 Context Agent,专门接住多轮追问里的车次、站点、日期。</li>
+        <li>把 Router 拆成一堆 Micro-Agent,配一个 LLM 仲裁,复杂问答在本机冷启动下,从 60–90 秒压到 20 秒内。</li>
+        <li>大规模铁路事实分块并行压缩,先提炼再生成。</li>
+      </ul>
+    </div>
+
+    <div class="rail-actions">
+      <a class="btn primary" href="https://github.com/EasonWheng/RailGPT" target="_blank" rel="noopener">GitHub 仓库 ↗</a>
+      <a class="btn" href="https://github.com/EasonWheng/RailGPT/releases/tag/v2.6.6" target="_blank" rel="noopener">下载 v2.6.6</a>
+      <a class="btn" href="mailto:whengeason@gmail.com">想聊 RailGPT →</a>
+    </div>
+
+    <p class="railgo-note">
+      还在做的一件事:把 RailGPT 原生整合进 <a href="https://github.com/RailGoApps/RailGo-WinUI/pull/30" target="_blank" rel="noopener">RailGo-WinUI</a>(一个开源铁路 App),PR #30 挂着。
+    </p>
+  </section>
+
+  <!-- ══════════ WHAT I LIKE ══════════ -->
+  <section class="panel" id="likes">
+    <div class="panel-head">
+      <span class="panel-flag mono">我喜欢的</span>
+      <span class="panel-line"></span>
+    </div>
+
+    <div class="grid">
+      <article class="module">
+        <div class="mod-tag mono">01</div>
+        <h3>LLM · Agent · Multi-Agent</h3>
+        <p>我最喜欢琢磨的:怎么让一群 agent 配合起来真能干活。光嘴硬不算数。</p>
+      </article>
+      <article class="module">
+        <div class="mod-tag mono">02</div>
+        <h3>飞行 · Boeing 737 / A320</h3>
+        <p>喜欢飞 737 / A320。驾驶舱里那套「每步都有仪表」的劲儿,我搬进自己写的 agent 里了。</p>
+      </article>
+      <article class="module">
+        <div class="mod-tag mono">03</div>
+        <h3>航空 LLM(中国)· 认知无线电</h3>
+        <p>把 LLM 用在中国航空上,也在频谱和干扰里做认知无线电。领域数据和术语,自己喂进去。</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ══════════ FLIGHT TRAINING ══════════ -->
+  <section class="panel" id="flight">
+    <div class="panel-head">
+      <span class="panel-flag mono">UPRT · 飞行训练</span>
+      <span class="panel-line"></span>
+    </div>
+
+    <p class="flight-intro">A320-200 模拟机上 2 小时的 UPRT 失控预防与改出,起飞、进近特情加侧风着陆,挨个来了一遍。</p>
+
+    <div class="flight-grid">
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">倒飞失速</span>
+          <span class="flight-num mono">01</span>
+        </div>
+        <p>高空失速之后,教员一脚舵把我送进倒飞。倒飞里先失速,照着程序改出来,结果改出那一下超速了,赶紧调俯仰才稳住。</p>
+      </div>
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">起飞失速</span>
+          <span class="flight-num mono">02</span>
+        </div>
+        <p>起飞构型失速,难点不在改出,在改出来之后别再失速第二次。练的就是改出后把姿态和能量收住。</p>
+      </div>
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">俯冲撞地</span>
+          <span class="flight-num mono">03</span>
+        </div>
+        <p>10000ft 异常姿态,失速改出失败,直接往下栽,坠地反弹——第一次泄压。就是让你亲眼看一眼动作慢半拍是什么下场。</p>
+      </div>
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">重着陆</span>
+          <span class="flight-num mono">04</span>
+        </div>
+        <p>重着陆练的是接地载荷控制,说白了就是把下沉率收住,落得轻一点。</p>
+      </div>
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">风切变</span>
+          <span class="flight-num mono">05</span>
+        </div>
+        <p>教员故意整的重度风切变,不提前判断就没法改出,坠地——第二次泄压。低高度没多少余量,先保轨迹,该复飞就复飞。</p>
+      </div>
+      <div class="flight-card">
+        <div class="flight-top">
+          <span class="flight-tag mono">侧风着陆</span>
+          <span class="flight-num mono">06</span>
+        </div>
+        <p>基准科目是大侧风正常着陆,舵和副翼得一直协调着,把侧滑压掉,才能落得正。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════ OTHER PROJECTS ══════════ -->
+  <section class="panel" id="other">
+    <div class="panel-head">
+      <span class="panel-flag mono">其他项目</span>
+      <span class="panel-line"></span>
+    </div>
+
+    <ul class="list">
+      <li class="item">
+        <a class="item-link" href="https://github.com/EasonWheng/MobiLoRA_experiment" target="_blank" rel="noopener">
+          <span class="item-name">MobiLoRA_experiment</span>
+          <span class="item-desc">复现 MobiLoRA(ACL 2025),做个轻量原型,想在边缘设备上把 LoRA 推理跑快。</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="https://github.com/EasonWheng/tot-reasoner-nju-26summer" target="_blank" rel="noopener">
+          <span class="item-name">tot-reasoner</span>
+          <span class="item-desc">给本地开源 LLM 做 ToT / MCTS 推理封装,带 verifier 引导搜索,附实时推理树可视化。</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="https://github.com/EasonWheng/ADVANCED_DOCTOR_FOR_IDRID" target="_blank" rel="noopener">
+          <span class="item-name">ADVANCED_DOCTOR_FOR_IDRID</span>
+          <span class="item-desc">本地眼底分析工作站:多任务分割、DR 分级,最后吐一份中文临床报告。</span>
+        </a>
+      </li>
+      <li class="item">
+        <a class="item-link" href="https://github.com/EasonWheng/GPA-Calculator-For-SEUer" target="_blank" rel="noopener">
+          <span class="item-name">GPA-Calculator-For-SEUer</span>
+          <span class="item-desc">离线绩点计算器,给 SEU 同学用的。</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-links mono">
+    <a href="https://github.com/EasonWheng" target="_blank" rel="noopener">github.com/EasonWheng</a>
+    <span class="sep">·</span>
+    <a href="mailto:whengeason@gmail.com">whengeason@gmail.com</a>
+  </div>
+  <p class="footer-sig mono">building the things I like</p>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
